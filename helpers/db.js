@@ -40,7 +40,7 @@ export const fetchPlaces = () => {
   return promise;
 };
 
-export const insertPlaces = (title, imageUri, address, lat, lng) => {
+export const insertPlace = (title, imageUri, address, lat, lng) => {
   const promise = new Promise((resolve, reject) => {
     db.transaction((tx) => {
       tx.executeSql(
